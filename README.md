@@ -22,14 +22,14 @@ Note: On days when the astronomy picture of the day is a video the previous day'
    ```bash
      env EDITOR=nano crontab -e
    ```
-   I then used this to run daily at 12:
+   I then used this to run the script daily at midnight:
    ```bash
-     0 12 * * *  /full/path/to/script.py
+     0 0 * * *  /full/path/to/script.py
    ```
    
    ``ctr-O`` to save and ``crt-x`` to exit.
    
-     The time is formated as the following: ``[minute: 0-59] [hour: 0-23] [day: 1-31] [months: 1-12] [weekday: 0-6]``.
+   (The time is formated as the following: ``[minute: 0-59] [hour: 0-23] [day: 1-31] [months: 1-12] [weekday: 0-6]``)
    
    To view your scheduled events you can type `` crontab -l``
    
